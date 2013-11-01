@@ -1,0 +1,80 @@
+body {
+    background: url(images/background.png)
+}
+
+
+a
+{
+    
+    
+}
+#wrapper {
+    
+	margin: 50px auto;
+	padding: 210px 0 0px 0;
+	padding-bottom: 50px;
+	position:relative;
+    width: 1000px;
+    background: rgba(198, 231, 229,0.80) url(images/banner.png) no-repeat;
+    
+}
+
+#nav {
+	list-style: none;
+	font-family: Verdana;
+    padding: 0;
+    margin: 20px 0 20px 0;
+    
+	background: rgb(255, 206, 99);
+	
+	overflow: hidden;
+	font-size: 0.9em;
+	
+    text-transform:capitalize;
+}
+#nav li {
+   margin-left: 40px;
+    
+    display: block;
+    float: left;
+    color: #808080;
+    width: 121px;
+    background: url(images/nav_bar.png);
+    height: 69px;
+    text-decoration: none;
+	
+}
+
+#nav li:hover {
+	background: url(images/nav_bar_o.gif) repeat-x;
+}
+
+
+#nav li:hover > a {
+	background: rgba(255, 255, 255, 0.20);
+    
+}
+
+
+#nav li a {
+    color: rgba(255, 255, 255, 0);
+    font-family: 'Comic Sans MS';
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 28px;
+    
+}
+
+#nav li a:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 1);
+}
+
+#currentNum{
+    
+    font-family: 'Courier New';
+    font-size: 42px;
+    
+}
