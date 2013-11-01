@@ -15,6 +15,7 @@ var t81=[81,[""]];var t82=[82,[""]];var t83=[83,[""]];var t84=[84,[""]];var t85=
 var t87=[87,[""]];var t88=[88,["To tykke damer"]];var t89=[89,[""]];var t90=[90,["Gamle Ole"]];
 
 var rystelinjer = ['Så ryster vi kuglerne.', 'Ryst løgposen.', 'Så ryster vi lidt i dåsen.', 'Vi giver den lige et ryst']
+
 var listen = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23, t24, t25, t26, t27, t28, t29, t30, t31, t32, t33, t34, t35, t36, t37, t38, t39, t40, t41, t42, t43, t44, t45, t46, t47, t48, t49, t50, t51, t52, t53, t54, t55, t56, t57, t58, t59, t60, t61, t62, t63, t64, t65, t66, t67, t68, t69, t70, t71, t72, t73, t74, t75, t76, t77, t78, t79, t80, t81, t82, t83, t84, t85, t86, t87, t88, t89, t90];
 var orglist = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23, t24, t25, t26, t27, t28, t29, t30, t31, t32, t33, t34, t35, t36, t37, t38, t39, t40, t41, t42, t43, t44, t45, t46, t47, t48, t49, t50, t51, t52, t53, t54, t55, t56, t57, t58, t59, t60, t61, t62, t63, t64, t65, t66, t67, t68, t69, t70, t71, t72, t73, t74, t75, t76, t77, t78, t79, t80, t81, t82, t83, t84, t85, t86, t87, t88, t89, t90];
 
@@ -49,6 +50,7 @@ window.onload = function () {
     createButton(document.body, traekNummer, "Træk et nummer!");
     createButton(document.body, rystPosen, "Ryst posen!");
     createButton(document.body, resetGame, "Nulstil spil");
+    resetGame();
     playlist();
 }
 
@@ -98,7 +100,7 @@ function createNumberTag(number) {
     var num = number+''
     var tag = '<a id="t'
     tag += number
-    tag += '" style="color: black; width:40px">'
+    tag += '" style="color: black; width:40px; padding-left: 10px; padding-right: 10px;">'
     tag += number
     tag += "</a>"
     
@@ -108,7 +110,8 @@ function createNumberTag(number) {
 function resetGame(){
     //console.log("kkk");
 
-    listen = orglist
+    listen = [t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, t14, t15, t16, t17, t18, t19, t20, t21, t22, t23, t24, t25, t26, t27, t28, t29, t30, t31, t32, t33, t34, t35, t36, t37, t38, t39, t40, t41, t42, t43, t44, t45, t46, t47, t48, t49, t50, t51, t52, t53, t54, t55, t56, t57, t58, t59, t60, t61, t62, t63, t64, t65, t66, t67, t68, t69, t70, t71, t72, t73, t74, t75, t76, t77, t78, t79, t80, t81, t82, t83, t84, t85, t86, t87, t88, t89, t90];
+    rystPosen();
     for (var i = 1; i < 91; i++)
     {
         console.log(i);
