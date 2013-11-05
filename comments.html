@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        <script type="text/javascript" src="resources/scripts/musik.js"></script>
+        <script type="text/javascript" src="resources/scripts/forside.js"></script>
+        <script type="text/javascript" src="resources/scripts/kedelig.js"></script>
+        <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+        
+        <meta charset="utf-8" />
+        <title>Gæstebog</title>
+    </head>
+    <body onload="playlist(); drilletekst();">
+        <div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : 'YOUR_APP_ID',                        // App ID from the app dashboard
+      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  (function(){
+     // If we've already installed the SDK, we're done
+     if (document.getElementById('facebook-jssdk')) {return;}
+
+     // Get the first script element, which we'll use to find the parent node
+     var firstScriptElement = document.getElementsByTagName('script')[0];
+
+     // Create a new script element and set its id
+     var facebookJS = document.createElement('script'); 
+     facebookJS.id = 'facebook-jssdk';
+
+     // Set the new script's source to the source of the Facebook JS SDK
+     facebookJS.src = '//connect.facebook.net/en_US/all.js';
+
+     // Insert the Facebook JS SDK into the DOM
+     firstScriptElement.parentNode.insertBefore(facebookJS, firstScriptElement);
+   }());
+</script>
+        <div id="wrapper">
+        <ul id="nav">
+        <li><a href="index.html">Forside</a></li> 
+            <li><a href="bankoboss.html">BankoBoss</a></li>
+            <li><a style="font-size: 90%"href="spas.html">Den sjove!</a></li>
+            <li><a style="font-size: 100%"href="comments.html">Gæstebog</a></li>
+        
+        </ul>
+
+            
+          <div class="fb-comments" style="left: 75px; background: rgba(255, 132, 44,0.50)" data-href="http://dinku.dk/comments.html" data-numposts="5"></div>
+        </div>
+    </body>
+</html>
